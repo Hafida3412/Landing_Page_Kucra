@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+ }
+
+ #wrapper{
+    padding: 0 15%;
+    /* background: rgb(139, 195, 245), #1294b8; */
+    background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
+ }
+
+
+.header p{
+    font-size: 30px;
+
+}
+.reseauxSociaux{
+    color:white;
+
+
+ }
