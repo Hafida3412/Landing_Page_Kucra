@@ -3,21 +3,69 @@
     margin: 0;
     padding: 0;
     vertical-align: top;
+    font-family: "Poppins";
  }
 
  #wrapper{
-    padding: 0 15%;
-    /* background: rgb(139, 195, 245), #1294b8; */
+    
+ }
+
+ section{
     background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
  }
 
-
-.header p{
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header p{
+    display: flex;
     font-size: 30px;
+    color:white;
+}
+nav a{
+    color: white;
+    font-size:10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color: white;
+    gap:10px;
 
 }
-.reseauxSociaux{
-    color:white;
-
-
+ul { 
+    list-style-type: none;
  }
+  
+ li{
+    padding: 5px;
+ }
+
+header div{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+ }
+header logo{
+    gap: 5px;
+}
+ main img{
+    margin-left: 400px;
+    margin-top: 100px;
+       
+ }
+
+figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:200px;
+    height: 100px;
+}
+
