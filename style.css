@@ -6,7 +6,7 @@
     font-family: "Poppins";
  }
 
- section{
+ #wrapper{
     background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
  }
 
@@ -16,6 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 header p{
     font-size: 30px;
     color:white;
@@ -41,28 +42,27 @@ ul {
  }
 
 header div{
-    display: flex;
     color: white;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
  }
-header logo{
-    gap: 5px;
+main{
+    background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
 }
- main img{
-    margin-left: 600px;
-    margin-top: 100px;
-       
- }
 
-figcaption{
+img {
+   padding-left: 150px;
+   padding-right: 150;
+   padding-top: 100px;
+    }    
+
+#presentation{
     display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 24px;
+    margin-bottom: 10px;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
-    width:200px;
-    height: 300px;
 }
-main figure{
-    display: flex;
-}
+    }
