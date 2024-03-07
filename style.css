@@ -40,13 +40,14 @@ ul {
  li{
     padding: 5px;
  }
-
-header div{
+.reseauxSociaux i{
     color: white;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap:5px;
  }
+
 main{
     background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
 }
@@ -75,8 +76,8 @@ main{
 }
 .description p{
     padding-top: 10px;
-font-size: 24px;
-padding-bottom: 50px;
+    font-size: 24px;
+    padding-bottom: 10px;
 }
 
 #container{
@@ -100,20 +101,25 @@ padding-bottom: 50px;
 }
 
 i {
+    padding-top:150px;
+    padding-bottom:50px;
     color: white;
-  
+    margin-left:135px;   
+ 
 }
 
 .card-text h1{
-    display: flex;
     font-size: 25px;
     margin-bottom: 10px;
+    text-align: center;
+    color: white;
     
 }
 
 .card-text p{
     font-size: 14px;
     color: white;
+    text-align: center;
 
 }
 
