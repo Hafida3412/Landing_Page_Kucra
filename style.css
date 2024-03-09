@@ -163,6 +163,14 @@ i {
 
 }
 
+.membre{
+    display: flex;
+    padding-top: 50px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
 
 
