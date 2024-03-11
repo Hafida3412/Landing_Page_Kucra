@@ -110,10 +110,12 @@ main{
     text-align: center;
     padding-bottom: 30px;
 }
-
+.description h1{
+    font-size: 20px;
+}
 .description p{
     padding-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 10px;
 }
 
@@ -199,12 +201,14 @@ main{
 
 }
 
-
 #objectif h1{
+padding-top: 150px;
 padding-bottom:10px;
+font-size: 20px;
 }
 
 #objectif{
+    font-size: 20px;
     text-align: center;
     background-color:white;
 }
@@ -222,21 +226,25 @@ padding-bottom:10px;
     width: 300px;
     height: 500px;
     border-radius: 10px;
-    /*overflow: hidden;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .membre-header{
     padding-top: 50px;
     position: relative;
-     border: 1px solid rgb(11, 194, 57); 
+    /* border: 1px solid rgb(11, 194, 57); */
 }
 
 .membre-header img {
     display: flex;
-    width: 50%;
-    height: 50%; 
+    display: flex;
+    width: 75%;
     border-radius: 100px;
-    margin-left: 75px;
+    margin-left: 35px;
+
 }
 
 .membre-header img {
@@ -254,8 +262,9 @@ padding-bottom:10px;
     gap: 10px;
     position: absolute;
     top: 0;
-    right: -80px;
-     border: 1px solid red; 
+    left: 0;
+    overflow:hidden;
+   /*  border: 1px solid red; */
 }
 
 .ReseauxSociaux i {
@@ -265,8 +274,9 @@ padding-bottom:10px;
 
 
 .membre-header:hover .ReseauxSociaux {
-    right: 35px;
-    top: 80px;
+    left: 60px;
+    top: 60px;
+    overflow: hidden;
 }
 
 .membre-texte h1{
@@ -296,10 +306,39 @@ padding-bottom:10px;
     font-weight:normal;
 }
 
+.container1{
+    position: relative;
+    width:100%;
+}
 
+.commentaire{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
 
+.commentaire h1{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+padding-bottom: 10px;
+}
 
+.commentaire p{
+    font-size: 18px;
+    font-weight: normal;
+    color:white;
+    padding-bottom: 20px;
+}
 
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+}
 
   
 
