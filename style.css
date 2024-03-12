@@ -445,6 +445,37 @@ font-size: 20px;
     }
 /*SECTION PRICING*/
 
-.col-50 {
-    width: 50%;
+
+#promotion{
+    display:flex;
+    font-size: 18px;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
+
+#promotion img{
+    height: 500px;
+    width: 500px;
+}   
+
+.column-50 {
+    width: 50%;
+ 
+}
+
+#promo.column-50 h1{
+    padding-bottom: 40px;
+}
+
+#promo.column-50 p{
+    padding-bottom:40px;
+}
+.result{
+    display: flex;
+    width: 60%;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: flex-start;
+}
+
