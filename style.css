@@ -314,7 +314,7 @@ font-size: 20px;
 /*SECTION EFFET PARALLAX*/
 
 #parallax{
-    background-image: url(Landing-page/img/parallax.png);
+    background-image:url("Landing-page/img/parallax.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -337,12 +337,16 @@ font-size: 20px;
 }
 
 .get-started-button{
-    color: white;
     padding: 10px 20px;
     border: solid;
+    color:white;
     border-radius: 5px;
     font-size: 16px;
-
+}
+.get-started-button:hover{
+    transform: scale(1.1);
+    color:white;
+    cursor:pointer;
 }
 
 /*SECTION BLOG*/
