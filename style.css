@@ -314,34 +314,29 @@ font-size: 20px;
 /*SECTION EFFET PARALLAX*/
 
 .parallax {
+    display:flex;
+    align-items:center;
+    justify-content: center;
     background-image: url("Landing-page/img/parallax.png");
-    background-attachment: fixed;
+   background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-.parallax{
+.parallax {
     position: relative;
     width:100%;
 }
 
 .parallax img{
     width:900px;
-    object-fit: cover;
+   object-fit: cover;
     filter: grayscale(1);
 }
 
 .parallax img:hover {
     filter:grayscale(0);
-}
-
-.commentaire{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-60%, 60%);
-    text-align: center;
 }
 
 .commentaire h1{
@@ -448,3 +443,8 @@ font-size: 20px;
         display: inline-block;
         vertical-align: middle;
     }
+/*SECTION PRICING*/
+
+.col-50 {
+    width: 50%;
+}
