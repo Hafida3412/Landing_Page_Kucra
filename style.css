@@ -377,3 +377,74 @@ font-size: 20px;
 
 /*SECTION BLOG*/
 
+#espace{
+        display: flex;
+        background-color: white;
+        gap: 20px;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: center;
+    
+    }
+    
+    .blog-header{
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+    }
+    
+    .blog-header img {
+        width: 100%;
+    }
+    
+    .blog-header img {
+        object-fit: cover;
+        filter: grayscale(0);
+    }
+    
+    .blog-header img:hover {
+        filter:grayscale(1);
+    }
+    
+    .blog-texte h1{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .blog-texte p{
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .user{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid red; 
+    }
+    
+    .user i {
+        color:black;
+        width:50px;
+    }
+    
+    .blog-header:hover .user {
+        top: 75px;
+    }
+
+    .user content {
+        display: inline-block;
+        vertical-align: middle;
+    }
