@@ -210,10 +210,28 @@ main{
     text-align: center;
 
 }
+
+/*PARTIE HOW IT WORKS*/
+.how{
+    padding-top: 200px;
+    text-align: center;
+    background-color: white;
+}
+
+.how h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.how p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
 /*SECTION EQUIPE: PRESENTER LES MEMBRES D'UNE EQUIPE*/
 
 #objectif h1{
-padding-top: 150px;
+padding-top: 100px;
 padding-bottom:10px;
 font-size: 20px;
 }
@@ -412,6 +430,13 @@ font-size: 20px;
         text-align: center;
     }
     
+    .button.read.more{
+        color: rgb(0, 153, 255);
+        font-size: 20px;
+        background-color: white;
+        border: none;
+    }
+
     .user{
         display: flex;
         flex-direction: column;
@@ -461,12 +486,28 @@ font-size: 20px;
 #promo.column-50 p{
     padding-bottom:40px;
 }
+
+.button.learn.more{
+    width: 250px;
+    height: 40px;
+    background-color: rgb(0, 153, 255);
+    font-size: 20px;
+    color: white;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    border-radius:25px;
+}
+
 .result{
     display: flex;
     width: 60%;
     font-weight: bold;
     font-size: 18px;
-    align-items: flex-start;
+    align-items: baseline;
+    padding:40px;
 }
 
 /*CARTES PARALLELES*/
@@ -501,13 +542,31 @@ font-size: 20px;
     background-color: white;
 }
 
-
 .price-header {
     padding-top:50px;
     padding-bottom:50px;
     color: black;   
- 
+    position:relative;
 }
+
+.sale{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:rgb(0, 153, 255);
+    width:10%;
+    color:white;
+    border-radius: 5px;
+}
+
+.sale h1{
+    font-size: 15px;
+}
+
+.price-header:hover .sale {
+    top: 50px;
+}
+
 .Title{
     font-size:20px;
     font-weight: bold;
@@ -538,6 +597,8 @@ font-size: 20px;
     justify-content: space-between;
     align-items: center;
    }
+
+
 .ul li.red{
     color:red;
 }
@@ -547,6 +608,9 @@ font-size: 20px;
 
 .price-text li i{
     color:green;
+}
+.price-text ul{
+    padding-bottom: 50px;
 }
 
 .price-text button{
