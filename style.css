@@ -117,14 +117,13 @@ main{
     height: 15px;
 } 
 
-.form{
-    border-radius: 30px;
-}
 .form-box{
-    border-radius: 30px;
+    border-radius: 25px;
     background: rgb(135, 203, 235);
     width: 300px;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .form-box input{
@@ -326,33 +325,39 @@ font-size: 20px;
     display:flex;
     justify-content: center;
     align-items: center;
+    filter:grayscale(1);
 }
 
 .parallax-content{
     text-align:center;
     padding: 50px;
+    color: white;
 }
 
 .parallax-content h1{
-    font-size: 18px;
+    font-size: 24px;
+    padding-bottom: 20px;
 }
 
 .parallax-content p{
     font-size: 16px;
+    padding-bottom: 10px;
 }
 
 .get-started-button{
-    padding: 10px 20px;
+    padding: 2px;
     border: solid;
     color:white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
+    background-color: transparent;
 }
 .get-started-button:hover{
     transform: scale(1.1);
     color:white;
     cursor:pointer;
 }
+
 
 /*SECTION BLOG*/
 
@@ -362,7 +367,6 @@ font-size: 20px;
         flex-wrap: nowrap;
         align-items: baseline;
         justify-content: center;
-    
     }
     
     .blog-header{
@@ -374,6 +378,11 @@ font-size: 20px;
         align-items: center;
         justify-content: center;
         position:relative;
+        overflow:hidden;
+    }
+
+    .blog{
+        overflow:hidden;
     }
     
     .blog-header img {
@@ -406,11 +415,10 @@ font-size: 20px;
     .user{
         display: flex;
         flex-direction: column;
-        gap: 10px;
         position: absolute;
         top: 0;
         left: 0;
-        border: 1px solid red; 
+       /* border: 1px solid red; */
     }
     
     .user i {
@@ -426,8 +434,8 @@ font-size: 20px;
         display: inline-block;
         vertical-align: middle;
     }
-/*SECTION PRICING*/
 
+/*SECTION PRICING*/
 
 #promotion{
     display:flex;
@@ -444,7 +452,6 @@ font-size: 20px;
 
 .column-50 {
     width: 50%;
- 
 }
 
 #promo.column-50 h1{
@@ -461,4 +468,59 @@ font-size: 20px;
     font-size: 18px;
     align-items: flex-start;
 }
+
+/*CARTES PARALLELES*/
+
+.pub{
+    background-color:rgb(216, 211, 211);
+    text-align: center;
+    padding-top:20px;
+}
+
+.pub h1{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.pub p{
+    font-size: 20px;
+}
+
+#pricing{
+    display: flex;
+    min-height:60vh;
+    background-color:rgb(216, 211, 211);
+    gap: 20px;
+    padding-left:180px;
+}
+
+.price{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.price-header {
+    padding-top:50px;
+    padding-bottom:50px;
+    color: black;   
+ 
+}
+.Title{
+    font-size:20px;
+    font-weight: bold;
+    text-align:center;
+}
+.price-text{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+    background-color: (247, 240, 240);
+    
+}
+
+
 
