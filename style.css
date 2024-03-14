@@ -276,7 +276,7 @@ font-size: 20px;
     border-radius: 100px;
     margin-left: 35px;
 }
-
+/*EFFET SUR LA PHOTO*/
 .membre-header img {
     object-fit: cover;
     filter: grayscale(1);
@@ -285,7 +285,7 @@ font-size: 20px;
 .membre-header img:hover {
     filter:grayscale(0);
 }
-
+/*MISE EN PLACE DES ICONES RESEAUX SOCIAUX*/
 .ReseauxSociaux {
     display: flex;
     flex-direction: column;
@@ -375,7 +375,28 @@ font-size: 20px;
     color:white;
     cursor:pointer;
 }
+/*WHAT YOUR CLIENT SAYS*/
+.What{
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(240, 239, 239);
+    padding-bottom:100px;
+}
 
+.What h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.What p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.photo{
+    display:flex;
+    background-color: rgb(240, 239, 239);
+    padding-bottom: 50px
+}
 
 /*SECTION BLOG*/
 
@@ -402,7 +423,7 @@ font-size: 20px;
     .blog-header img {
         width: 100%;
     }
-    
+    /*EFFET SUR L'IMAGE*/
     .blog-header img {
         object-fit: cover;
         filter: grayscale(0);
@@ -425,7 +446,7 @@ font-size: 20px;
         margin-bottom: 10px;
         text-align: center;
     }
-    
+    /*CREATION DU BOUTON READ MORE*/
     .button.read.more{
         color: rgb(0, 153, 255);
         font-size: 20px;
@@ -486,7 +507,7 @@ font-size: 20px;
 #promo.column-50 p{
     padding-bottom:40px;
 }
-
+/*CREATION BOUTON LEARN MORE*/
 .button.learn.more{
     width: 250px;
     height: 40px;
@@ -510,7 +531,7 @@ font-size: 20px;
     padding:40px;
 }
 
-/*CARTES PARALLELES*/
+/*CARTES PUBLICITAIRES PARALLELES*/
 
 .pub{
     background-color:rgb(216, 211, 211);
@@ -548,7 +569,7 @@ font-size: 20px;
     color: black;   
     position:relative;
 }
-
+/*ONGLET 20% SALE*/
 .onglet{
     position:absolute;
     top:0;
@@ -592,22 +613,18 @@ font-size: 20px;
     align-items: center;
    }
 
-.ul li.red{
-    color:red;
-}
 .blue-text{
     color:blue;
 }
 
-.price-text li i{
+.price-text li i{   /*ICONES COCHES EN VERT*/
     color:green;
 }
 .price-text ul{
     padding-bottom: 50px;
     font-size:16px;
 }
-
-
+/*CREATION BOUTON JOIN NOW*/
 .price-text button{
     width: 250px;
     height: 40px;
@@ -644,4 +661,10 @@ font-size: 20px;
     text-align: center;
     color:white;
 }
+/*BOUTON SCROLL UP*/
 
+#scrollUp{
+position:fixed;
+bottom: 10px;
+right:100px;
+}
