@@ -113,7 +113,7 @@ main{
 .box{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 15px;
 } 
 
@@ -133,6 +133,7 @@ main{
     border: none;
     outline: none;
     background:  rgb(135, 203, 235);
+    border-radius: 40%;
 }
 
 .form-box button{
@@ -143,7 +144,7 @@ main{
     border-radius: 25px;
     background: rgb(0, 174, 255);
     cursor: pointer;
-    transition: 0.35;
+    transform: translateX(-25%);
 } 
 
 /*SECTION 2: METTRE EN PARALLELE DES CARTES AVEC UN EFFET*/
@@ -172,10 +173,18 @@ main{
 }
 
 .card{
-    width: 300px;
-    height: 500px;
+    display: flex;
+    height: 400px;
     border-radius: 10px;
     background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .fa-solid{
+    font-size: 3em;
 }
 
 .card:hover{
@@ -213,9 +222,10 @@ main{
 
 /*PARTIE HOW IT WORKS*/
 .how{
-    padding-top: 200px;
+    padding-top: 100px;
     text-align: center;
     background-color: white;
+    padding-bottom: 150px;
 }
 
 .how h1{
@@ -259,11 +269,10 @@ font-size: 20px;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .membre-header{
-    padding-top: 50px;
     position: relative;
     overflow: hidden;
     /* border: 1px solid rgb(11, 194, 57); */
@@ -271,10 +280,10 @@ font-size: 20px;
 
 .membre-header img {
     display: flex;
-    display: flex;
     width: 75%;
     border-radius: 100px;
     margin-left: 35px;
+  
 }
 /*EFFET SUR LA PHOTO*/
 .membre-header img {
@@ -293,6 +302,7 @@ font-size: 20px;
     position: absolute;
     top: 0;
     left: 0;
+    opacity:1;
    /*  border: 1px solid red; */
 }
 
@@ -343,13 +353,14 @@ font-size: 20px;
     display:flex;
     justify-content: center;
     align-items: center;
-    filter:grayscale(1);
 }
 
 .parallax-content{
     text-align:center;
     padding: 50px;
     color: white;
+    background-color:#000;
+    opacity:0.5;
 }
 
 .parallax-content h1{
@@ -365,10 +376,8 @@ font-size: 20px;
 .get-started-button{
     padding: 2px;
     border: solid;
-    color:white;
     border-radius: 5px;
     font-size: 14px;
-    background-color: transparent;
 }
 .get-started-button:hover{
     transform: scale(1.1);
@@ -667,4 +676,8 @@ font-size: 20px;
 position:fixed;
 bottom: 10px;
 right:100px;
+}
+
+#scrollUp .fa-solid{
+    font-size: 3em;
 }
