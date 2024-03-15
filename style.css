@@ -177,6 +177,8 @@ main{
     height: 400px;
     border-radius: 10px;
     background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -199,7 +201,7 @@ main{
     padding-top:150px;
     padding-bottom:50px;
     color: white;
-    margin-left:135px;   
+    /*margin-left:135px;  */ 
  
 }
 
@@ -403,9 +405,15 @@ font-size: 20px;
     background-color: rgb(240, 239, 239);
     gap:20px;
 }
-.img:hover{
-    filter: brightness(80%);
+/*EFFET FLOU NET*/
+.image-container img {
+    filter: blur(5px);
 }
+
+.image-container img:hover{
+    filter: blur(0);
+}
+
 /*SECTION BLOG*/
 
 #espace{
@@ -436,7 +444,7 @@ font-size: 20px;
     .blog-header img {
         width: 100%;
     }
-    /*EFFET SUR L'IMAGE*/
+    /*EFFET GRIS SUR L'IMAGE*/
     .blog-header img {
         object-fit: cover;
         filter: grayscale(0);
@@ -466,7 +474,7 @@ font-size: 20px;
         background-color: white;
         border: none;
     }
-
+    /*REALISATION DE L ENCADRE EN HAUT A GAUCHE DE LA PHOTO AVEC EFFET OVERFLOW HIDDEN*/
     .user{
         display: flex;
         flex-direction: column;
@@ -484,7 +492,7 @@ font-size: 20px;
         color:black;
         width:50px;
     }
-    
+    /*L'ENCADRE SE MET A SA PLACE LORSQU'ON SURVOLE AVEC LA SOURIS*/
     .blog-header:hover .user {
         top:0;
         opacity:1;
