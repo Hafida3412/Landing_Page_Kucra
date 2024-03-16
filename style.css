@@ -416,6 +416,13 @@ font-size: 20px;
 
 /*SECTION BLOG*/
 
+.discuss{
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom:10px;
+
+}
+
 #espace{
         display: flex;
         gap: 20px;
@@ -616,6 +623,7 @@ font-size: 20px;
     font-size:24px;
     color:blue;
 }
+
 .Title h2 p{
     display:flex;
     justify-content: space-between;
