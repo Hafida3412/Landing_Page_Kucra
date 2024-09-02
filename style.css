@@ -226,304 +226,322 @@ main {
     color: white; /* Couleur du texte */
 }
 
-
-.card-text p{
-    font-size: 14px;
-    color: white;
-    text-align: center;
-
+/* Styles pour le texte dans les cartes */
+.card-text p {
+    font-size: 14px; /* Définit la taille de la police à 14 pixels */
+    color: white; /* Définit la couleur du texte à blanc */
+    text-align: center; /* Centre le texte */
 }
 
-/*PARTIE HOW IT WORKS*/
-.how{
-    padding-top: 200px;
-    text-align: center;
-    background-color: rgb(240, 239, 239);
-    padding-bottom: 200px;
+/* SECTION COMMENT FAIRE - Présentation générale */
+.how {
+    padding-top: 200px; /* Espace au-dessus de la section */
+    text-align: center; /* Centre le contenu de la section */
+    background-color: rgb(240, 239, 239); /* Couleur de fond gris clair */
+    padding-bottom: 200px; /* Espace en dessous de la section */
 }
 
-.how h1{
-    font-size: 20px;
-    font-weight: bold;
+.how h1 {
+    font-size: 20px; /* Taille de la police pour le titre */
+    font-weight: bold; /* Rend le texte en gras */
 }
 
-.how p{
-    padding-top: 10px;
-    font-size: 20px;
+.how p {
+    padding-top: 10px; /* Espacement au-dessus du paragraphe */
+    font-size: 20px; /* Taille de la police pour le texte du paragraphe */
 }
 
-/*SECTION EQUIPE: PRESENTER LES MEMBRES D'UNE EQUIPE*/
-
-#objectif h1{
-padding-top: 100px;
-padding-bottom:10px;
-font-size: 20px;
+/* SECTION OBJECTIF - Présentation du titre et du fond */
+#objectif h1 {
+    padding-top: 100px; /* Espace au-dessus du titre */
+    padding-bottom: 10px; /* Espace en dessous du titre */
+    font-size: 20px; /* Taille de la police pour le titre */
 }
 
-#objectif{
-    font-size: 20px;
-    text-align: center;
-    background-color:white;
+#objectif {
+    font-size: 20px; /* Taille de la police pour le texte dans la section objectif */
+    text-align: center; /* Centre le texte */
+    background-color: white; /* Couleur de fond blanche */
 }
 
-#equipe{
-    display: flex;
-    padding-top: 50px;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+/* SECTION ÉQUIPE - Présentation des membres */
+#equipe {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    padding-top: 50px; /* Espace au-dessus de la section équipe */
+    background-color: white; /* Couleur de fond blanche */
+    justify-content: center; /* Centre les membres horizontalement */
+    align-items: center; /* Aligne les membres verticalement */
+    gap: 20px; /* Espace entre les membres */
 }
 
-.membre{
-    width: 300px;
-    height: 500px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-    overflow:hidden;
+/* STYLE POUR CHAQUE MEMBRE DE L'ÉQUIPE */
+.membre {
+    width: 300px; /* Largeur fixe pour les cartes des membres */
+    height: 500px; /* Hauteur fixe pour les cartes des membres */
+    border-radius: 10px; /* Coins arrondis pour les cartes */
+    display: flex; /* Utilise Flexbox pour la mise en page interne */
+    flex-wrap: wrap; /* Permet de répartir généreusement le contenu */
+    align-items: baseline; /* Aligne les éléments à la base */
+    justify-content: center; /* Centre le contenu interne */
+    overflow: hidden; /* Cache les débordements */
 }
 
-.membre-header{
-    position: relative;
-    overflow: hidden;
-    /* border: 1px solid rgb(11, 194, 57); */
+/* EN-TETE DU MEMBRE - Image du membre */
+.membre-header {
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+    overflow: hidden; /* Cache les images qui dépassent */
+    /* border: 1px solid rgb(11, 194, 57); */ /* Option pour ajouter une bordure */
 }
 
+/* IMAGE DU MEMBRE */
 .membre-header img {
-    display: flex;
-    width: 85%;
-    border-radius: 100px;
-    margin-left: 35px;
-  
-}
-/*EFFET SUR LA PHOTO*/
-.membre-header img {
-    object-fit: cover;
-    filter: grayscale(1);
+    display: flex; /* Flex pour centrer les images (mais ce n'est pas nécessaire ici) */
+    width: 85%; /* Largeur de l'image à 85% de son conteneur */
+    border-radius: 100px; /* Arrondi complet pour un effet circulaire */
+    margin-left: 35px; /* Espace à gauche de l'image */
+    object-fit: cover; /* Ajuste l'image pour couvrir le conteneur */
+    filter: grayscale(1); /* Applique un filtre en niveaux de gris (image désaturée) */
 }
 
+/* EFFET SUR LA PHOTO AU SURVOL */
 .membre-header img:hover {
-    filter:grayscale(0);
+    filter: grayscale(0); /* Restaure la couleur normale lorsque l'image est survolée */
 }
-/*MISE EN PLACE DES ICONES RESEAUX SOCIAUX*/
+
+/* MISE EN PLACE DES ICONES RESEAUX SOCIAUX */
 .ReseauxSociaux {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    left: -70px;
-    top: -20px;
-  /* border: 1px solid red; */
+    display: flex; /* Utilise un conteneur flex pour aligner les icônes verticalement */
+    flex-direction: column; /* Les icônes seront alignées en colonne */
+    gap: 10px; /* Espacement de 10px entre les icônes */
+    position: absolute; /* Positionne le conteneur par rapport à son parent */
+    left: -70px; /* Positionne initialement le conteneur en dehors de la vue à gauche */
+    top: -20px; /* Positionne le conteneur légèrement vers le haut */
+    /* border: 1px solid red; */ /* Décommenter pour visualiser la bordure du conteneur */
 }
 
 .ReseauxSociaux i {
-    color: #000;
-    width:50px;
+    color: #000; /* Couleur des icônes */
+    width: 50px; /* Largeur de chaque icône */
 }
 
+/* Transition de l'affichage des icônes sur survol de l'élément 'membre' */
 .membre:hover .ReseauxSociaux {
-    left: 70px;
-    top: 20px;
+    left: 70px; /* Déplace le conteneur vers la droite lors du survol */
+    top: 20px; /* Ajuste la position verticale lors du survol */
 }
 
-.membre-texte h1{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
+/* STYLES DES TITRES DANS LE BLOC MEMBRE */
+.membre-texte h1 {
+    font-size: 18px; /* Taille de police pour le titre principal */
+    font-weight: bold; /* Titre en gras */
+    margin-top: 10px; /* Marge supérieure pour espacer le titre */
+    text-align: center; /* Centre le texte */
 }
 
-.membre-texte h2{
-    font-size: 18px;
-    font-weight: normal;
-    margin-bottom: 10px;
-    text-align: center;
+.membre-texte h2 {
+    font-size: 18px; /* Taille de police pour le sous-titre */
+    font-weight: normal; /* Poids de police normal */
+    margin-bottom: 10px; /* Marge inférieure pour espacer le sous-titre */
+    text-align: center; /* Centre le texte du sous-titre */
 }
 
-.title{
-    font-size:12px;
-    text-align:center;
+/* STYLES DU TITRE GÉNÉRAL */
+.title {
+    font-size: 12px; /* Taille de police pour le titre général */
+    text-align: center; /* Centre le texte du titre */
 }
 
-.title h1{
-    font-weight:bold;
+.title h1 {
+    font-weight: bold; /* Titre principal en gras */
 }
 
-.title h2{
-    font-weight:normal;
+.title h2 {
+    font-weight: normal; /* Sous-titre en poids normal */
 }
 
-/*SECTION EFFET PARALLAX*/
-
-#parallax{
-    background-image:url("Landing-page/img/parallax.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+/* SECTION EFFET PARALLAX */
+#parallax {
+    background-image: url("Landing-page/img/parallax.png"); /* Image de fond pour l'effet parallaxe */
+    background-size: cover; /* Couvre tout le conteneur sans déformation */
+    background-position: center; /* Centre l'image de fond */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    display: flex; /* Utilise un conteneur flex pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
 }
 
-.parallax-content{
-    text-align:center;
-    padding: 50px;
-    color: white;
-    background-color:#000;
-    opacity:0.5;
+.parallax-content {
+    text-align: center; /* Centre le texte du contenu */
+    padding: 50px; /* Ajoute du rembourrage autour du contenu */
+    color: white; /* Couleur du texte en blanc */
+    background-color: #000; /* Fond noir pour le contenu */
+    opacity: 0.5; /* Rend le fond semi-transparent */
 }
 
-.parallax-content h1{
-    font-size: 24px;
-    padding-bottom: 20px;
+.parallax-content h1 {
+    font-size: 24px; /* Taille de police pour le titre dans la section parallaxe */
+    padding-bottom: 20px; /* Ajoute de l'espace en bas du titre */
 }
 
-.parallax-content p{
-    font-size: 16px;
-    padding-bottom: 10px;
+.parallax-content p {
+    font-size: 16px; /* Taille de police pour les paragraphes */
+    padding-bottom: 10px; /* Ajoute de l'espace en bas des paragraphes */
 }
 
-.get-started-button{
-    padding: 2px;
-    border: solid;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.get-started-button:hover{
-    transform: scale(1.1);
-    color:white;
-    cursor:pointer;
-}
-/*WHAT YOUR CLIENT SAYS*/
-.What{
-    padding-top: 50px;
-    text-align: center;
-    background-color: rgb(240, 239, 239);
-    padding-bottom:100px;
+/* STYLES DU BOUTON "GET STARTED" */
+.get-started-button {
+    padding: 2px; /* Rembourrage pour le bouton */
+    border: solid; /* Bordure autour du bouton */
+    border-radius: 5px; /* Arrondi des coins du bouton */
+    font-size: 14px; /* Taille de police pour le texte du bouton */
 }
 
-.What h1{
-    font-size: 20px;
-    font-weight: bold;
+/* EFFET SUR SURVOL DU BOUTON */
+.get-started-button:hover {
+    transform: scale(1.1); /* Agrandit le bouton lors du survol */
+    color: white; /* Change la couleur du texte en blanc lors du survol */
+    cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
 }
 
-.What p{
-    padding-top: 10px;
-    font-size: 20px;
+/* SECTION WHAT - Présentation générale du contenu */
+.What {
+    padding-top: 50px; /* Espacement supérieur */
+    text-align: center; /* Centrage du texte */
+    background-color: rgb(240, 239, 239); /* Couleur de fond */
+    padding-bottom: 100px; /* Espacement inférieur */
 }
-.image-container{
-    display:flex;
-    background-color: rgb(240, 239, 239);
-    gap:20px;
+
+.What h1 {
+    font-size: 20px; /* Taille de police pour le titre */
+    font-weight: bold; /* Épaisseur du texte en gras */
 }
-/*EFFET FLOU NET*/
+
+.What p {
+    padding-top: 10px; /* Espacement au-dessus du paragraphe */
+    font-size: 20px; /* Taille de police pour le paragraphe */
+}
+
+/* SECTION IMAGE CONTAINER - Style pour le conteneur d'images */
+.image-container {
+    display: flex; /* Disposition flexible pour les éléments enfants */
+    background-color: rgb(240, 239, 239); /* Couleur de fond du conteneur */
+    gap: 20px; /* Espacement entre les images */
+}
+
+/* EFFET FLOU NET - Flou appliqué aux images */
 .image-container img {
-    filter: blur(5px);
+    filter: blur(5px); /* Flou de l'image par défaut */
 }
 
-.image-container img:hover{
-    filter: blur(0);
+.image-container img:hover {
+    filter: blur(0); /* Supprime le flou au survol de l'image */
 }
 
-/*SECTION BLOG*/
-
-.discuss{
-    padding-top: 70px;
-    text-align: center;
-    padding-bottom:10px;
-
+/* SECTION BLOG - Styles pour la section de blog */
+.discuss {
+    padding-top: 70px; /* Espacement supérieur pour la section de discussion */
+    text-align: center; /* Centrage du texte */
+    padding-bottom: 10px; /* Espacement inférieur */
 }
 
-#espace{
-        display: flex;
-        gap: 20px;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        justify-content: center;
-    }
-    
-    .blog-header{
-        width: 300px;
-        height: 500px;
-        border-radius: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        overflow:hidden;
-    }
-    
-    .blog{
-        position:relative;
-        overflow:hidden;
+/* ESPACE - Styles pour l'affichage des articles de blog */
+#espace {
+    display: flex; /* Disposition flexible pour les éléments enfants */
+    gap: 20px; /* Espacement entre les articles */
+    flex-wrap: nowrap; /* Évite le retour à la ligne des éléments */
+    align-items: baseline; /* Alignement des éléments sur la ligne de base */
+    justify-content: center; /* Centrage des éléments */
+}
 
-    }   
-    .blog-header img {
-        width: 100%;
-    }
-    /*EFFET GRIS SUR L'IMAGE*/
-    .blog-header img {
-        object-fit: cover;
-        filter: grayscale(0);
-    }
-    
-    .blog-header img:hover {
-        filter:grayscale(1);
-    }
-    
-    .blog-texte h1{
-        font-size: 14px;
-        font-weight: bold;
-        margin-top: 10px;
-        text-align: center;
-    }
+/* BLOG HEADER - Styles pour l'en-tête de chaque article */
+.blog-header {
+    width: 300px; /* Largeur fixe pour l'en-tête du blog */
+    height: 500px; /* Hauteur fixe pour l'en-tête du blog */
+    border-radius: 10px; /* Coins arrondis */
+    display: flex; /* Disposition flexible pour les éléments enfants */
+    flex-wrap: wrap; /* Permet aux enfants de passer à la ligne si besoin */
+    align-items: center; /* Centrage vertical des éléments enfants */
+    justify-content: center; /* Centrage horizontal des éléments enfants */
+    position: relative; /* Positionnement relatif pour le contenu interne */
+    overflow: hidden; /* Masque le contenu qui déborde */
+}
 
-    .blog-texte p{
-        font-size: 12px;
-        font-weight: normal;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    /*CREATION DU BOUTON READ MORE*/
-    .button.read.more{
-        color: rgb(0, 153, 255);
-        font-size: 20px;
-        background-color: white;
-        border: none;
-    }
-    /*REALISATION DE L ENCADRE EN HAUT A GAUCHE DE LA PHOTO AVEC EFFET OVERFLOW HIDDEN*/
-    .user{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: -75px;
-        left: 0;
-        transition:opacity 0.5s;
-       /* border: 1px solid red; */
-    }
-    
-    blog-header:hover .user i{
-        opacity:0;
-    }
-    .user i {
-        color:black;
-        width:50px;
-    }
-    /*L'ENCADRE SE MET A SA PLACE LORSQU'ON SURVOLE AVEC LA SOURIS*/
-    .blog-header:hover .user {
-        top:0;
-        opacity:1;
+/* BLOG - Style général pour chaque article de blog */
+.blog {
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+    overflow: hidden; /* Masque le contenu qui déborde */
+}
 
-    }
+/* IMAGE DANS BLOG HEADER - Style pour les images dans l'en-tête du blog */
+.blog-header img {
+    width: 100%; /* Images s'étendent sur toute la largeur de leur conteneur */
+}
 
-    .user content {
-        display: inline-block;
-        vertical-align: middle;
-    }
+   /* EFFET GRIS SUR L'IMAGE */
+.blog-header img {
+    object-fit: cover;  /* Permet à l'image de couvrir tout l'espace disponible en conservant ses proportions */
+    filter: grayscale(0);  /* L'image normale est affichée en couleur */
+}
+
+.blog-header img:hover {
+    filter: grayscale(1);  /* L'image devient en niveaux de gris au survol */
+}
+
+/* STYLES POUR LE TEXTE DU BLOG */
+.blog-texte h1 {
+    font-size: 14px;  /* Taille de la police pour le titre */
+    font-weight: bold;  /* Met le titre en gras */
+    margin-top: 10px;  /* Marge au-dessus du titre */
+    text-align: center;  /* Centrer le titre */
+}
+
+.blog-texte p {
+    font-size: 12px;  /* Taille de la police pour le texte du paragraphe */
+    font-weight: normal;  /* Texte normal (non gras) */
+    margin-bottom: 10px;  /* Marge en dessous du paragraphe */
+    text-align: center;  /* Centrer le texte du paragraphe */
+}
+
+/* CREATION DU BOUTON "READ MORE" */
+.button.read.more {
+    color: rgb(0, 153, 255);  /* Couleur du texte du bouton */
+    font-size: 20px;  /* Taille de la police pour le bouton */
+    background-color: white;  /* Couleur de fond blanche */
+    border: none;  /* Pas de bordure pour le bouton */
+}
+
+/* RÉALISATION DE L'ENCADRE EN HAUT À GAUCHE DE LA PHOTO AVEC EFFET OVERFLOW HIDDEN */
+.user {
+    display: flex;  /* Utilisation de Flexbox pour aligner les éléments */
+    flex-direction: column;  /* Aligner les enfants en colonne */
+    position: absolute;  /* Position absolue pour placer l'élément par rapport à son parent */
+    top: -75px;  /* Position initiale en haut hors de l'écran */
+    left: 0;  /* Alignement à gauche */
+    transition: opacity 0.5s;  /* Transition en douceur pour l'opacité sur 0.5 secondes */
+    /* border: 1px solid red;  Uncomment for debugging: This will add a red border around the user box */
+}
+
+/* L'effet de survol qui rend l'icône invisible */
+.blog-header:hover .user i {
+    opacity: 0;  /* Rend l'icône invisible lors du survol de l'élément parent */
+}
+
+.user i {
+    color: black;  /* Couleur de l'icône */
+    width: 50px;  /* Largeur de l'icône */
+}
+
+/* L'ENCADRE SE MET EN VUE LORSQU'ON SURVOLE AVEC LA SOURIS */
+.blog-header:hover .user {
+    top: 0;  /* Remonte l'encadré à sa position initiale */
+    opacity: 1;  /* Rend l'encadré visible */
+}
+
+/* STYLES POUR LE CONTENU DANS .user */
+.user content {
+    display: inline-block;  /* Permet de traiter le contenu comme un bloc en ligne */
+    vertical-align: middle;  /* Aligne le contenu verticalement au centre */
+}
 
 /*SECTION PRICING*/
 
