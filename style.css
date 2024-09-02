@@ -1,69 +1,71 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    font-family: "Poppins";
- }
-
- #wrapper{
-    background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
- }
-
-/*SECTION 1*/
-
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    color: white;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    box-sizing: border-box; /* Permet de s'assurer que le padding et la bordure sont inclus dans la largeur totale d'un élément */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements intérieurs par défaut */
+    vertical-align: top; /* Aligne les éléments en haut */
+    font-family: "Poppins"; /* Définit la police par défaut */
 }
 
-header p{
-    font-size: 30px;
-    font-weight: bold;
-    color:white;
-    margin-right:200px;
+#wrapper {
+    background-image: radial-gradient(rgb(139, 195, 245), #1294b8); /* Fond en dégradé radial pour le wrapper */
 }
 
-nav a{
-    color: white;
-    font-size:15px;
-}
-/*CREATION DE LA NAVBAR*/
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    color: white;
-    gap:10px;   
-    margin-right:200px;
+/*SECTION 1 : EN-TÊTE ET NAVIGATION*/
+
+header {
+    display: flex; /* Utilisation de flexbox pour disposer les éléments */
+    justify-content: flex-end; /* Aligne le contenu à droite */
+    align-items: baseline; /* Aligne les éléments le long de leur ligne de base */
+    color: white; /* Couleur du texte */
+    flex-direction: row; /* Orientation des éléments dans une ligne */
+    flex-wrap: nowrap; /* Évite le retour à la ligne des éléments */
 }
 
-nav ul:hover{
-    transform: scale(1,1);
+header p {
+    font-size: 30px; /* Taille du texte */
+    font-weight: bold; /* Met le texte en gras */
+    color: white; /* Couleur du texte */
+    margin-right: 200px; /* Espacement à droite */
 }
-    
-ul { 
-    list-style-type: none;
- }
-  
- li{
-    padding: 5px;
- }
+
+/*CREATION DE LA NAVBAR */
+nav a {
+    color: white; /* Couleur des liens du menu */
+    font-size: 15px; /* Taille de la police des liens */
+}
+
+nav ul {
+    display: flex; /* Affiche les éléments du menu en flex */
+    justify-content: space-evenly; /* Espace égal entre les éléments */
+    flex-direction: row; /* Orientation des éléments dans une ligne */
+    color: white; /* Couleur du texte */
+    gap: 10px; /* Espacement entre les éléments */
+    margin-right: 200px; /* Marge à droite */
+}
+
+nav ul:hover {
+    transform: scale(1, 1); /* Pas d'effet sur le survol pour le menu */
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+}
+
+li {
+    padding: 5px; /* Espacement autour des éléments de la liste */
+}
 
 #reseauxSociaux {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    gap:20px;
-    transition:1s;
- }
+    color: white; /* Couleur des icônes de réseaux sociaux */
+    display: flex; /* Affichage en flex */
+    flex-direction: row; /* Agencement en ligne */
+    gap: 20px; /* Espacement entre les éléments */
+    transition: 1s; /* Durée de la transition pour les effets */
+}
+
 #reseauxSociaux:hover {
-    transform: scale(1,1);
-    cursor: pointer;
+    transform: scale(1, 1); /* Pas d'effet sur le survol pour les réseaux sociaux */
+    cursor: pointer; /* Change le curseur en main pour indiquer l'interactivité */
 }
 /*FIN NAVBAR*/
 
