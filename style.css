@@ -295,7 +295,7 @@ main {
 
 /* IMAGE DU MEMBRE */
 .membre-header img {
-    display: flex; /* Flex pour centrer les images (mais ce n'est pas nécessaire ici) */
+    display: flex; /* Flex pour centrer les images*/
     width: 85%; /* Largeur de l'image à 85% de son conteneur */
     border-radius: 100px; /* Arrondi complet pour un effet circulaire */
     margin-left: 35px; /* Espace à gauche de l'image */
@@ -362,20 +362,20 @@ main {
 /* SECTION EFFET PARALLAX */
 #parallax {
     background-image: url("Landing-page/img/parallax.png"); /* Image de fond pour l'effet parallaxe */
-    background-size: cover; /* Couvre tout le conteneur sans déformation */
-    background-position: center; /* Centre l'image de fond */
+    background-size: cover; /* pour couvrir tout le conteneur sans déformation */
+    background-position: center; /* On centre l'image de fond */
     background-attachment: fixed; /* L'image reste fixe lors du défilement */
-    display: flex; /* Utilise un conteneur flex pour centrer le contenu */
-    justify-content: center; /* Centre horizontalement le contenu */
-    align-items: center; /* Centre verticalement le contenu */
+    display: flex; /* On centre le contenu */
+    justify-content: center; /* On centre horizontalement le contenu */
+    align-items: center; /* On centre verticalement le contenu */
 }
 
 .parallax-content {
-    text-align: center; /* Centre le texte du contenu */
-    padding: 50px; /* Ajoute du rembourrage autour du contenu */
+    text-align: center; /* On centre le texte du contenu */
+    padding: 50px; /* espacement interne*/
     color: white; /* Couleur du texte en blanc */
     background-color: #000; /* Fond noir pour le contenu */
-    opacity: 0.5; /* Rend le fond semi-transparent */
+    opacity: 0.5; /* cela rend le fond semi-transparent */
 }
 
 .parallax-content h1 {
