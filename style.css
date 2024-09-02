@@ -69,151 +69,163 @@ li {
 }
 /*FIN NAVBAR*/
 
-main{
+/* STYLE DU MAIN ET D'AUTRES SECTIONS */
+
+main {
     background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
 }
 
+/*STYLE DES IMAGES */
+
 .div img {
-   padding-left: 150px;
-   padding-right: 200px;
-   padding-top: 100px;
+   padding-left: 150px; /* Espacement personnalisé à gauche */
+   padding-right: 200px; /* Espacement personnalisé à droite */
+   padding-top: 100px; /* Espacement au-dessus */
 }
 
-.main img{
-    display: block;
-    width: 50px;
-    height: 150px;
+.main img {
+    display: block; /* Affiche les images comme des blocs */
+    width: 50px; /* Largeur fixe */
+    height: 150px; /* Hauteur fixe */
 }
 
 .col-50 {
-    width: 50%;
-    margin-left:300px;
+    width: 50%; /* Colonne de 50% de largeur */
+    margin-left: 300px; /* Marge à gauche pour espacer */
 }
 
-#presentation{
-    display: flex;
-    font-size: 24px;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-
+#presentation {
+    display: flex; /* Affichage en flex */
+    font-size: 24px; /* Taille de la police */
+    align-items: center; /* Alignement des éléments au centre */
+    padding-top: 100px; /* Espace au-dessus */
+    padding-bottom: 50px; /* Espace en dessous */
 }
 
-#presentation h1{
-    padding-bottom: 40px;
+#presentation h1 {
+    padding-bottom: 40px; /* Espacement en bas de l'en-tête */
 }
 
-#presentation p{
-    padding-bottom: 40px;
+#presentation p {
+    padding-bottom: 40px; /* Espacement en bas du paragraphe */
 }
 
-.image-box {
-    padding: 50px;
+/* BOUTON DE FORMULAIRE */
+
+.box {
+    display: flex; /* Affichage en flex */
+    align-items: center; /* Aligne les éléments au centre verticalement */
+    justify-content: flex-start; /* Aligne les éléments au début de la ligne */
+    height: 15px; /* Hauteur fixe */
 }
 
-/*MISE EN PLACE DU BOUTTON FORMULAIRE*/
-.box{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 15px;
-} 
-
-.form-box{
-    border-radius: 25px;
-    background: rgb(135, 203, 235);
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+/* Style pour la boîte de formulaire */
+.form-box {
+    border-radius: 25px; /* Arrondi des coins */
+    background: rgb(135, 203, 235); /* Couleur de fond */
+    width: 300px; /* Largeur de la boîte */
+    display: flex; /* Utilisation de Flexbox pour l'alignement */
+    justify-content: space-between; /* Espacement entre les éléments */
+    flex-direction: row; /* Alignement des éléments en ligne */
 }
 
-.form-box input{
-    font-size: 18px;
-    color:white;
-    padding: 10px 10px;
-    border: none;
-    outline: none;
-    background:  rgb(135, 203, 235);
-    border-radius: 40%;
+/* Style pour les champs de saisie dans la boîte de formulaire */
+.form-box input {
+    font-size: 18px; /* Taille de police */
+    color: white; /* Couleur du texte */
+    padding: 10px 10px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    outline: none; /* Pas de contour au focus */
+    background: rgb(135, 203, 235); /* Couleur de fond correspondant à la boîte */
+    border-radius: 40%; /* Arrondi des coins */
 }
 
-.form-box button{
-    color: rgb(0, 247, 255);
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    border-radius: 25px;
-    background: rgb(0, 174, 255);
-    cursor: pointer;
-    transform: translateX(-25%);
-} 
-
-/*SECTION 2: METTRE EN PARALLELE DES CARTES AVEC UN EFFET*/
-
-.description{
-    padding-top: 50px;
-    background-color: white;
-    text-align: center;
-    padding-bottom: 30px;
-}
-.description h1{
-    font-size: 20px;
-}
-.description p{
-    padding-top: 10px;
-    font-size: 20px;
-    padding-bottom: 10px;
+/* Style pour le bouton dans la boîte de formulaire */
+.form-box button {
+    color: rgb(0, 247, 255); /* Couleur du texte du bouton */
+    padding: 10px; /* Espacement interne du bouton */
+    font-size: 18px; /* Taille de police */
+    border: none; /* Pas de bordure */
+    border-radius: 25px; /* Arrondi des coins */
+    background: rgb(0, 174, 255); /* Couleur de fond du bouton */
+    cursor: pointer; /* Changement de curseur au survol */
+    transform: translateX(-25%); /* Décalage du bouton vers la gauche */
 }
 
-#container{
-    display: flex;
-    min-height:60vh;
-    background-color: white;
-    justify-content: center;
-    gap: 20px;
+/* SECTION 2: Styles pour la section de description */
+.description {
+    padding-top: 50px; /* Espacement supérieur */
+    background-color: white; /* Couleur de fond de la description */
+    text-align: center; /* Centrage du texte */
+    padding-bottom: 30px; /* Espacement inférieur */
 }
 
-.card{
-    display: flex;
-    height: 400px;
-    border-radius: 10px;
-    background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+/* Styles pour le titre de la description */
+.description h1 {
+    font-size: 20px; /* Taille de police pour le titre */
 }
 
-.card .fa-solid{
-    font-size: 3em;
+/* Styles pour le paragraphe de la description */
+.description p {
+    padding-top: 10px; /* Espacement supérieur */
+    font-size: 20px; /* Taille de police */
+    padding-bottom: 10px; /* Espacement inférieur */
 }
 
-.card:hover{
-    transform:translateY(-15px);
-    transition:1s;
+/* Styles pour le conteneur principal des cartes */
+#container {
+    display: flex; /* Utilisation de Flexbox */
+    min-height: 60vh; /* Hauteur minimale du conteneur */
+    background-color: white; /* Couleur de fond */
+    justify-content: center; /* Alignement au centre */
+    gap: 20px; /* Espacement entre les cartes */
 }
 
-.card-header{
-    position: relative;
-    height: 200px;
+/* Styles pour chaque carte */
+.card {
+    display: flex; /* Utilisation de Flexbox pour la carte */
+    height: 400px; /* Hauteur fixe de la carte */
+    border-radius: 10px; /* Arrondi des coins */
+    background-image: radial-gradient(rgb(139, 195, 245), #1294b8); /* Dégradé de fond */
+    justify-content: space-evenly; /* Espacement entre les éléments */
+    align-items: center; /* Alignement vertical des éléments au centre */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 20px; /* Espacement entre les éléments dans la carte */
 }
 
+/* Styles pour les icônes dans la carte */
+.card .fa-solid {
+    font-size: 3em; /* Taille de l'icône */
+}
+
+/* Effet de survol sur la carte */
+.card:hover {
+    transform: translateY(-15px); /* Déplacement vers le haut de la carte */
+    transition: 1s; /* Durée de la transition */
+}
+
+/* Styles pour l'en-tête de la carte */
+.card-header {
+    position: relative; /* Positionnement relatif pour le positionnement des éléments internes */
+    height: 200px; /* Hauteur de l'en-tête */
+}
+
+/* Styles pour l'icône de l'en-tête */
 .card-header i {
-    padding-top:150px;
-    padding-bottom:50px;
-    color: white;
-    /*margin-left:135px;  */ 
- 
+    padding-top: 150px; /* Espacement supérieur de l'icône */
+    padding-bottom: 50px; /* Espacement inférieur de l'icône */
+    color: white; /* Couleur de l'icône */
+    /*margin-left:135px;  */ /* Commenté: décalage éventuel à gauche */
 }
 
-.card-text h1{
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: white;
-    
+/* Styles pour le texte de la carte (titre) */
+.card-text h1 {
+    font-size: 25px; /* Taille de police pour le titre */
+    margin-bottom: 10px; /* Espacement inférieur */
+    text-align: center; /* Centrage du texte */
+    color: white; /* Couleur du texte */
 }
+
 
 .card-text p{
     font-size: 14px;
