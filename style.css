@@ -543,195 +543,217 @@ main {
     vertical-align: middle;  /* Aligne le contenu verticalement au centre */
 }
 
-/*SECTION PRICING*/
+/* SECTION PRICING - Section dédiée à la présentation des promotions et des prix */
 
-#promotion{
-    display:flex;
-    font-size: 18px;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+/* Styles du conteneur de la promotion */
+#promotion {
+    display: flex; /* Utilisation de flex pour aligner les éléments */
+    font-size: 18px; /* Taille de police pour le texte */
+    align-items: center; /* Alignement vertical des éléments */
+    padding-top: 100px; /* Espacement supérieur */
+    padding-bottom: 50px; /* Espacement inférieur */
 }
 
-#promotion img{
-    height: 500px;
-    width: 500px;
-}   
+/* Styles pour l'image dans la promotion */
+#promotion img {
+    height: 500px; /* Hauteur de l'image */
+    width: 500px; /* Largeur de l'image */
+}
 
+/* Classe de colonne à 50% de largeur */
 .column-50 {
-    width: 50%;
+    width: 50%; /* Définit la largeur à 50% */
 }
 
-#promo.column-50 h1{
-    padding-bottom: 40px;
+/* Styles pour le titre et le paragraphe dans la colonne de promotion */
+#promo.column-50 h1 {
+    padding-bottom: 40px; /* Espacement inférieur pour le titre */
 }
 
-#promo.column-50 p{
-    padding-bottom:40px;
-}
-/*CREATION BOUTON LEARN MORE*/
-.button.learn.more{
-    width: 250px;
-    height: 40px;
-    background-color: rgb(0, 153, 255);
-    font-size: 20px;
-    color: white;
-    border:none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-    border-radius:25px;
+#promo.column-50 p {
+    padding-bottom: 40px; /* Espacement inférieur pour le paragraphe */
 }
 
-.result{
-    display: flex;
-    width: 60%;
-    font-weight: bold;
-    font-size: 18px;
-    align-items: baseline;
-    padding:40px;
+/* CREATION BOUTON LEARN MORE - Styles pour le bouton "Learn More" */
+.button.learn.more {
+    width: 250px; /* Largeur du bouton */
+    height: 40px; /* Hauteur du bouton */
+    background-color: rgb(0, 153, 255); /* Couleur de fond du bouton */
+    font-size: 20px; /* Taille de la police pour le texte du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Aucune bordure */
+    display: flex; /* Utilisation de flex pour centrer le contenu */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Centrage horizontal du texte */
+    margin-left: 50px; /* Marge à gauche */
+    border-radius: 25px; /* Bords arrondis */
 }
 
-/*CARTES PUBLICITAIRES PARALLELES*/
-
-.pub{
-    background-color:rgb(216, 211, 211);
-    text-align: center;
-    padding-top:20px;
+/* Résultat de la promotion affiché */
+.result {
+    display: flex; /* Utilisation de flex pour l'affichage */
+    width: 60%; /* Largeur de la section résultat */
+    font-weight: bold; /* Texte en gras */
+    font-size: 18px; /* Taille de la police */
+    align-items: baseline; /* Alignement à la ligne de base */
+    padding: 40px; /* Espacement intérieur */
 }
 
-.pub h1{
-    font-size: 26px;
-    font-weight: bold;
+/* CARTES PUBLICITAIRES PARALLELES - Styles des cartes de prix */
+.pub {
+    background-color: rgb(216, 211, 211); /* Couleur de fond pour les cartes */
+    text-align: center; /* Alignement du texte au centre */
+    padding-top: 20px; /* Espacement supérieur */
 }
 
-.pub p{
-    font-size: 20px;
+/* Styles des titres et paragraphes dans les cartes publicitaires */
+.pub h1 {
+    font-size: 26px; /* Taille de la police pour les titres */
+    font-weight: bold; /* Texte en gras */
 }
 
-#pricing{
-    display: flex;
-    min-height:60vh;
-    background-color:rgb(216, 211, 211);
-    gap: 20px;
-    padding-left:180px;
+.pub p {
+    font-size: 20px; /* Taille de la police pour le paragraphe */
 }
 
-.price{
-    width: 300px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: white;
+/* SECTION PRICING - Styles de la section principale des prix */
+#pricing {
+    display: flex; /* Utilisation de flex pour aligner les cartes de prix */
+    min-height: 60vh; /* Hauteur minimale de la section */
+    background-color: rgb(216, 211, 211); /* Couleur de fond */
+    gap: 20px; /* Espacement entre les cartes de prix */
+    padding-left: 180px; /* Espacement à gauche */
 }
 
+/* Styles d'une carte de prix individuelle */
+.price {
+    width: 300px; /* Largeur de la carte de prix */
+    height: 500px; /* Hauteur de la carte */
+    border-radius: 10px; /* Bords arrondis */
+    background-color: white; /* Couleur de fond de la carte */
+}
+
+/* En-tête de la carte de prix */
 .price-header {
-    padding-top:50px;
-    padding-bottom:50px;
-    color: black;   
-    position:relative;
-}
-/*ONGLET 20% SALE*/
-.onglet{
-    position:absolute;
-    top:0;
-    right:0;
-    background-color:rgb(0, 153, 255);
-    width:15%;
-    color:white;
-    border-radius: 5px;
-    transform: translateY(50px);
-    padding:5px 5px;
+    padding-top: 50px; /* Espacement supérieur */
+    padding-bottom: 50px; /* Espacement inférieur */
+    color: black; /* Couleur du texte */
+    position: relative; /* Positionnement relatif pour l'onglet de promotion */
 }
 
-.Title{
-    font-size:20px;
-    font-weight: bold;
-    text-align:center;
-    padding-bottom: 40px; 
+/* ONGLET 20% SALE - Onglet de promotion pour les cartes de prix */
+.onglet {
+    position: absolute; /* Positionnement absolu pour l'onglet */
+    top: 0; /* À partir du haut de la carte */
+    right: 0; /* À partir de la droite de la carte */
+    background-color: rgb(0, 153, 255); /* Couleur de fond de l'onglet */
+    width: 15%; /* Largeur de l'onglet */
+    color: white; /* Couleur du texte de l'onglet */
+    border-radius: 5px; /* Bords arrondis */
+    transform: translateY(50px); /* Déplacement de l'onglet vers le bas */
+    padding: 5px 5px; /* Espacement intérieur */
 }
 
-.Title h2{
-    font-size:24px;
-    color:blue;
+/* Styles pour le conteneur principal du titre */
+.Title {
+    font-size: 20px; /* Taille de police pour le titre principal */
+    font-weight: bold; /* Rendre le texte du titre gras */
+    text-align:center; /* Centrer le texte */
+    padding-bottom: 40px; /* Espace sous le titre */
 }
 
-.Title h2 p{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.price-text{
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: black;
-    background-color: (247, 240, 240);
+/* Styles pour le sous-titre h2 dans le conteneur Title */
+.Title h2 {
+    font-size: 24px; /* Taille de police pour le sous-titre */
+    color: blue; /* Couleur du texte du sous-titre */
 }
 
-.price-text li{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-   }
-
-.blue-text{
-    color:blue;
+/* Styles pour le paragraphe dans le sous-titre h2 */
+.Title h2 p {
+    display: flex; /* Utiliser flexbox pour l'affichage */
+    justify-content: space-between; /* Espacer les éléments de manière égale */
+    align-items: center; /* Aligner les éléments au centre */
 }
 
-.price-text li i{   /*ICONES COCHES EN VERT*/
-    color:green;
-}
-.price-text ul{
-    padding-bottom: 50px;
-    font-size:16px;
-}
-/*CREATION BOUTON JOIN NOW*/
-.price-text button{
-    width: 250px;
-    height: 40px;
-    background-color: rgb(0, 153, 255);
-    font-size: 20px;
-    color: white;
-    border:none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25px;
+/* Styles pour le texte affiché dans la section de prix */
+.price-text {
+    font-size: 25px; /* Taille de police pour le texte de prix */
+    margin-bottom: 10px; /* Marge sous le texte de prix */
+    text-align: center; /* Centrer le texte */
+    color: black; /* Couleur du texte */
+    background-color: (247, 240, 240); /* Couleur de fond (note: syntaxe incorrecte) */
 }
 
-/*FOOTER*/
-
-.sigles{
-    padding-top:20px;
-    padding-bottom: 20px;
-    background-color:rgb(77, 75, 75);
-    text-align: center;
-    color:white;
+/* Styles pour les éléments de liste dans la section de prix */
+.price-text li {
+    display: flex; /* Utiliser flexbox pour les éléments de la liste */
+    justify-content: space-between; /* Espacer les éléments de manière égale */
+    align-items: center; /* Aligner les éléments au centre */
 }
 
-.Info{
-    padding-bottom: 20px;
-    background-color:rgb(77, 75, 75);
-    text-align: center;
-    color:white;
+/* Styles pour le texte bleu */
+.blue-text {
+    color: blue; /* Couleur bleu pour le texte */
 }
 
-.adress{
-    padding-bottom:20px;
-    background-color:rgb(77, 75, 75);
-    text-align: center;
-    color:white;
-}
-/*BOUTON SCROLL UP*/
-
-#scrollUp{
-position:fixed;
-bottom: 10px;
-right:100px;
+/* Styles pour les icônes de voiture dans la section de prix */
+.price-text li i { /* ICONES COCHES EN VERT */
+    color: green; /* Couleur des icônes en vert */
 }
 
-#scrollUp .fa-solid{
-    font-size: 3em;
+/* Styles pour la liste non ordonnée dans la section de prix */
+.price-text ul {
+    padding-bottom: 50px; /* Espace sous la liste */
+    font-size: 16px; /* Taille de police pour la liste */
+}
+
+/* Styles pour le bouton "JOIN NOW" */
+.price-text button {
+    width: 250px; /* Largeur du bouton */
+    height: 40px; /* Hauteur du bouton */
+    background-color: rgb(0, 153, 255); /* Couleur de fond du bouton */
+    font-size: 20px; /* Taille de police pour le texte du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    display: flex; /* Utiliser flexbox pour centrer le texte */
+    align-items: center; /* Aligner le texte au centre */
+    justify-content: center; /* Centrer le contenu du bouton */
+    margin-left: 25px; /* Marge à gauche du bouton */
+}
+
+/* Styles pour le pied de page (footer) */
+.sigles {
+    padding-top: 20px; /* Espace en haut */
+    padding-bottom: 20px; /* Espace en bas */
+    background-color: rgb(77, 75, 75); /* Couleur de fond du pied de page */
+    text-align: center; /* Centrer le texte */
+    color: white; /* Couleur du texte en blanc */
+}
+
+/* Infos supplémentaires dans le pied de page */
+.Info {
+    padding-bottom: 20px; /* Espace en bas */
+    background-color: rgb(77, 75, 75); /* Couleur de fond identique au pied de page */
+    text-align: center; /* Centrer le texte */
+    color: white; /* Couleur du texte en blanc */
+}
+
+/* Adresse dans le pied de page */
+.adress {
+    padding-bottom: 20px; /* Espace en bas */
+    background-color: rgb(77, 75, 75); /* Couleur de fond identique au pied de page */
+    text-align: center; /* Centrer le texte */
+    color: white; /* Couleur du texte en blanc */
+}
+
+/* Styles pour le bouton de défilement vers le haut */
+#scrollUp {
+    position: fixed; /* Positionnement fixe par rapport à la fenêtre */
+    bottom: 10px; /* Espacement du bas */
+    right: 100px; /* Espacement à droite */
+}
+
+/* Styles pour l'icône dans le bouton de défilement vers le haut */
+#scrollUp .fa-solid {
+    font-size: 3em; /* Taille de police pour l'icône */
 }
